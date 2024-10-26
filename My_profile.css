@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+}
+hr{
+    width: 65%;
+    margin-left: 190px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 4px 10px rgba(160, 148, 148, 0.1); 
+
+}
+body{
+    font-family: 'Roboto', Arial;
+    background-color: rgb(236, 235, 235)
+}
+footer{
+    background-image: linear-gradient(to right ,darkorange,maroon);
+    color:white;
+    text-align: center;
+    height: 100px;
+}
+footer p{
+    padding-top: 45px;
+}
+header h1{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.aboutme {
+    background-image: linear-gradient(to right ,darkorange,maroon);
+    display: flex;
+    flex-direction: row; /* Keep them side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between text and image */
+    padding: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+.aboutme .aboutmename{
+    text-align: center;
+    margin-top: -30px;
+}
+.aboutme p{
+    color: rgb(196, 190, 190);
+}
+.aboutme img {
+    max-width: 350px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 45%; /* Slight curve for the image edges */
+}
+.aboutme h1{
+    margin-bottom: 20px;   
+}
+
+.education h1{
+    margin-left: 150px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.education table{
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+
+}
+table{
+    width: 70%;
+    height: 200px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.skillset{
+    width: 80%;
+    margin-left: 220px;
+    margin-right: 180px;
+}
+.skillset h1{
+    margin-left: -68px;
+}
+.skills img {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Ensure the height matches the width */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+    border-radius: 15px; /* Optional: Adds a curved border */
+    margin-left: 10px;
+    animation: scrollskill 5s linear infinite;
+
+}
+@keyframes scrollskill {
+    0% {
+        transform: translateX(30px); /* Start 30px from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left end */
+    }
+}
+.projectsec h1,.projectsec .pp{
+    text-align: center;
+}
+.projectsec .pp{
+    margin-top: 10px;
+}
+.project {
+    width: 80%;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: row; /* Change to column to stack projects vertically */
+    gap: 20px; /* Space between each project */
+    margin: 0 auto; /* Center the project container */
+}
+.pro h3{
+    margin-bottom: 8px;
+}
+.pro {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow to each project */
+    margin-bottom: 20px; /* Additional space between projects */
+}
+
+.project button {
+    background-color: rgb(103, 21, 179); 
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    display: inline-block;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.project button:hover {
+    background-color: rgb(167, 82, 247); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1); 
+}
+.connect{
+    text-align: center;
+}
+.connect img {
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.connect img:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15); 
+}
+.contactme{
+    text-align: center;
+    margin-bottom: 10px;
+}
+form {
+    background-color: white; 
+    width: 35%; 
+    margin: 0 auto;
+    margin-bottom: 20px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
+form label {
+    font-size: 1.2em; 
+    display: block; 
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical; /* Allow textarea to be resized vertically */
+}
+
+form input[type="submit"] {
+    background-color: rgb(35, 103, 160); /* Background color for the button */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Show pointer when hovering */
+    font-size: 1.1em; /* Larger font size for the button */
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(62, 167, 238); /* Change color on hover */
+}
+
+/* Tablet screens (e.g., 768px and below) */
+@media (max-width: 768px) {
+    /* General layout adjustments */
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .aboutme img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    /* Table styling for education section */
+    .education table {
+        width: 90%; /* Reduced width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Skillset styling */
+    .skillset {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* Project section adjustments */
+    .project {
+        flex-direction: column; /* Stack projects vertically */
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Contact form adjustments */
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile screens (e.g., 480px and below) */
+@media (max-width: 480px) {
+    /* Header and About Me section */
+    header h1 {
+        font-size: 1.5em;
+    }
+    .aboutme h1, .education h1, .skillset h1, .projectsec h1, .contactme {
+        font-size: 1.2em;
+    }
+    
+    .aboutme img {
+        max-width: 200px; /* Smaller size for mobile screens */
+    }
+
+    /* Skill icons adjustments */
+    .skills img {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+    }
+
+    /* Contact section adjustments */
+    .connect img {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    
+    /* Footer adjustments */
+    footer p {
+        font-size: 0.9em;
+    }
+}
